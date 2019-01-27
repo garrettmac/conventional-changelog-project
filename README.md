@@ -1,5 +1,7 @@
 # conventional-changelog-project
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 Commits that follow a standard and descriptive format can be parsed programmitically to learn much about the state of the repository.
 
 Most particularly...
@@ -80,6 +82,11 @@ Once you have a Conventional commit log, you are ready to enjoy auto-generated C
 ```bash
 > npm run release
 ```
+
+```bash
+> git push --follow-tags origin master
+```
+(`release` only tags commits locally, so they need to bu pushed up after)
 
 `package.json`
 ```json
